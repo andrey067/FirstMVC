@@ -5,11 +5,9 @@ using System.Threading.Tasks;
 
 namespace WebApplication1.Models.ViewModels
 {
-    public class Departament
+    public class Department
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
-
     }
 }
