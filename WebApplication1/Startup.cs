@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-
+using WebApplication1.Services;
 using WebApplication1.Models;
 using WebApplication1.Data;
 
@@ -39,6 +39,7 @@ namespace WebApplication1
                     builder.MigrationsAssembly("WebApplication1")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellersService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
