@@ -13,6 +13,6 @@ namespace WebApplication1.Models
 
         public DbSet<Seller> Seller { get; set; }
 
-        public DbSet<SalesRecord> SaSalesRecord { get; set; }
+        public DbSet<SalesRecord> SalesRecord { get; set; }
     }
 }
