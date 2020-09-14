@@ -31,5 +31,8 @@ namespace WebApplication1.Models.ViewModels
             return Sellers.Sum(seller => TotalSales(initial, Final));
 
         }
+
+
+
     }
 }
