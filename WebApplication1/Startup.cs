@@ -40,6 +40,7 @@ namespace WebApplication1
 
             services.AddScoped<SeedingService>();
             services.AddScoped<SellersService>();
+            services.AddScoped<DepartmentService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,6 +67,8 @@ namespace WebApplication1
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+
         }
     }
 }
