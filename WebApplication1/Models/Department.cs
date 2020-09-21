@@ -25,7 +25,7 @@ namespace WebApplication1.Models.ViewModels
             Sellers.Add(seller);
         }
 
-        public double TotalSales(DateTime initial, DateTimeSegment Final)
+        public double TotalSales(DateTime initial, DateTime Final)
         {
             
             return Sellers.Sum(seller => TotalSales(initial, Final));
